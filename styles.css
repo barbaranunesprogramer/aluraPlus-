@@ -141,49 +141,30 @@ color:var(--botao-azul)
     color :var(--cor-de-fundo);
 
 }
-@media(max-width:1200px){
+@media(max-width : 768px){ /* media queris  so aconece quando esse for verdade*/
     .container{
-        width: auto;
-    }
-    .principal{
-        width: auto;
-        background-image:none;
-        font-size: small;
-        justify-content: center;
-    }
-    .container__caixa{
-        width: auto;
-        background-image:none;
-        font-size: small;
-        text-align: center;
-    }
-  
-    .lista__link a{
-        width: auto;
-        flex-direction: column-reverse;
-    }
-    .dispositivos__lista{
-        flex-direction: column;
-        width: auto;
-    }
-    .container__botao {
-        justify-content: center;
-        width: auto;
-    }
-    .botao_secundario{
-        justify-content: center;
-        width: auto;
+        display:block; /*fica um bloco em cima do outro  */
+        background-image: none;
     }
     .container__imagem{
-        width: 65%;
+        width: 50%; /*imagem fica dentro do contexto da pagina*/
+    }
+    .container__caixa{
+        margin: 2em 2em; /*margem ficar condizente com a pagina*/
+    }
+    .secundario {
+        margin: 0;/*tiramos toda a margem */
+        text-align: center;/*alinha todo texto e imagens*/
+    }
+    .secundario__imagem{
+    width: 50vw;
+    }
+    .dispositivos__lista{
+        display: block;
     }
     .rodape__lista{
-        width: auto;
-        flex-direction: column-reverse;
+        display:block;
     }
-    .rodape__texto{
-        width: auto;
-        font-size: small;
-        justify-content: center;
-    }
+
 }
+ 
